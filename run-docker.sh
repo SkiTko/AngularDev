@@ -1,6 +1,9 @@
 #! /bin/bash
 
 cp -r $HOME/.aws .
+cp -r $HOME/.ssh .
+cp -r $HOME/.gitconfig .
+
 mkdir src
 docker build -t angular-dev .
 docker run -it --rm \
